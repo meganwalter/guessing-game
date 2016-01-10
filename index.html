@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>Guessing Game Demo</title>
   </head>
-  <body>
-    <h1>Hello, World!!!</h1>
-    <p>
+  <body style="background-color: #000066; text-align: center; color: #00FF33">
+    <h1 style="font-size: 60px">Hello, World!!!</h1>
+    <p style="font-size: 20px">
       My name is Megan! Welcome to my guessing game page, I hope you get all the answers right!
     </p>
     <script>
       alert("Welcome to my guessing game!\n I'm going to ask three questions to see how well you know me!");
-      var middleName = prompt("Let's see how well you know me!\n First question: What is my middle name?").toLowerCase();
+      var middleName = prompt("First question: What is my middle name?").toLowerCase();
       if (middleName === "elizabeth") {
         alert("Good Job, my middle name is " + middleName + "!");
       } else {
@@ -36,13 +36,13 @@
         alert("No way, "+ nflTeam +" is okay, but not as cool as the Seahawks!\n You are mistaken.");
       }
 
-      var myAge = prompt("What's my age again?");
+      var myAge = parseInt(prompt("What's my age again?"));
       if (myAge === 25) {
-        alert("Spot on! I'm "+ myAge ". Great job!")
-      } else if () {
-
+        alert("You are correct! I am "+ myAge + "!");
+      } else if (myAge > 25) {
+        alert("You guessed too high, I'm not that old yet");
       } else {
-
+        alert(myAge+" is too low!");
       }
     </script>
   </body>
