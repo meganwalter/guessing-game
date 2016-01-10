@@ -13,18 +13,18 @@
       alert("Welcome to my guessing game!\n I'm going to ask three questions to see how well you know me!");
       var middleName = prompt("First question: What is my middle name?").toLowerCase();
       if (middleName === "elizabeth") {
-        alert("Good Job, my middle name is " + middleName + "!");
+        alert("Good Job, my middle name is " + middleName.charAt(0).toUpperCase() + middleName.slice(1) + "!");
       } else {
-        alert("My middle name is not "+ middleName);
+        alert("My middle name is not "+ middleName.charAt(0).toUpperCase() + middleName.slice(1) + ".");
       }
 
       var catsOrDogs = prompt("Second question: Do I prefer cats or dogs?").toLowerCase();
       if (catsOrDogs === "dogs") {
         alert("Yes, I love " + catsOrDogs + "!");
       } else if (catsOrDogs === "cats"){
-        alert("Wrong, I respect "+ catsOrDogs + ", but dogs are the best!");
+        alert("Wrong, I respect " + catsOrDogs + ", but dogs are the best!");
       } else {
-        alert("I'm sure "+ catsOrDogs +" is cool, but it wasn't an option in the question.\n So you are wrong.");
+        alert("I'm sure " + catsOrDogs + " is cool, but it wasn't an option in the question.\n So you are wrong.");
       }
 
       var nflTeam = prompt("Third question: My favorite NFL team is the ...").toUpperCase();
