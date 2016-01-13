@@ -1,3 +1,4 @@
+
 //declaring a varialbe to keep score of user answers
   var counter = 0;
 
