@@ -37,18 +37,21 @@ updatePage('question', "Now let's see if you can read my mind...");
 updatePage('answer', '');
 updatePage('isCorrect', '');
 updatePage('userScore', '');
+
 var guessedRight = false; //declaring a variable to start the while loop
 while (!guessedRight) { //while the user has guessed wrong, the game will continue to prompt them
 
   var userNum = parseInt(prompt('What number am I thinking of between 1-10?'));
+  updatePage('answer', 'You guessed: ' + userNum);
+  
   var myNum = 5;
   if (userNum === myNum) {
-    alert("You're a mind reader!");
+    updatePage('isCorrect', "You're a mind reader!");
     guessedRight = true; //when the user guesses correctly, the variable returns true and the while loop stops
   } else if (userNum > myNum) {
-    alert("You're too high, guess again!");
+    updatePage('isCorrect', "You're too high, guess again!");
   } else {
-    alert("You're too low, guess again!");
+    updatePage('isCorrect', "You're too low, guess again!");
   }
 }
 
