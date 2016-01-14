@@ -1,0 +1,25 @@
+body {
+  background-color: #000066;
+  text-align: center;
+  color: #00FF33;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.push {
+  margin: 300px;
+}
+
+.contributor {
+  color: #FFFFFF;
+}
+
+a{
+  color: #FFFFFF;
+}
