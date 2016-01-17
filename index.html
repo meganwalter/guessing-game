@@ -4,19 +4,29 @@
     <meta charset="utf-8">
     <title>Guessing Game Demo</title>
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   </head>
   <body>
+
     <div class="push" ></div>
     <h1 >Hello, World!!!</h1>
-    <p>
-      My name is Megan! Welcome to my guessing game page, I hope you get all the answers right!
+    <p id ='megan'>
+      My name is Megan!
     </p>
+    <p id = 'welcome'>
+      Welcome to my guessing game page, I hope you get all the answers right!
+    </p>
+
+      <!-- <input type='text' id = 'inputBox' /> -->
+      <button id = 'submitButton' onclick="gameStart()">Start the Game!!!</button>
+
 
     <p id="question"></p>
     <p id="answer"></p>
     <p id="isCorrect"></p>
     <p id="userScore"></p>
 
+    <p id = 'contributors'> </p>
     <script type="text/javascript" src="game.js"></script>
   </body>
 </html>
