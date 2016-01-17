@@ -1,7 +1,14 @@
+html {
+  font-family: Montserrat;
+}
+
 body {
-  background-color: #000066;
   text-align: center;
-  color: #00FF33;
+  color: black;
+  background: url(background.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  width: 65%;
+  margin-left: 10%;
 }
 
 h1 {
@@ -10,6 +17,7 @@ h1 {
 
 p {
   font-size: 20px;
+  color: black;
 }
 
 .push {
@@ -22,4 +30,12 @@ p {
 
 a{
   color: #FFFFFF;
+}
+
+
+#submitButton {
+  color: #F2635F;
+  border: 1px solid #F2635F;
+  font-weight: bold;
+  font-size: 30px;
 }
