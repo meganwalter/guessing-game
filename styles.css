@@ -34,8 +34,9 @@ a{
 
 
 #submitButton {
-  color: #F2635F;
-  border: 1px solid #F2635F;
+  background-color: white;
+  color: black;
+  border: 1px solid #ffcc00;
   font-weight: bold;
   font-size: 30px;
 }
