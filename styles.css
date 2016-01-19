@@ -20,6 +20,10 @@ p {
   color: black;
 }
 
+img {
+  height: 120px;
+}
+
 .push {
   margin: 300px;
 }
@@ -39,4 +43,11 @@ a{
   border: 1px solid #ffcc00;
   font-weight: bold;
   font-size: 30px;
+}
+
+.correct {
+  color:rgb(54, 117, 72)
+}
+.incorrect {
+  color: rgb(98, 8, 21)
 }

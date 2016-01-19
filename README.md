@@ -9,12 +9,14 @@ The topics that I learned while writing this page were:
 * if/else statements
 * separation of concerns
 * while loops
+* DOM manipulation
+* CSS colours
+* Adding images
+* Deployments
 
 ## Contributors
 [Taylor Wirtz](https://github.com/tlwirtz/)
-Taylor helped me to implement my while loop using:
-
-`var guessedRight = false;`
+[Daniel Li](https://www.github.com/danielxli)
 
 When the user guesses correctly the variable is set to `true` and the loop will stop prompting them.
 ## More from me at:
