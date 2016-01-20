@@ -25,7 +25,7 @@ img {
 }
 
 .push {
-  margin: 300px;
+  margin: 100px;
 }
 
 .contributor {
@@ -50,4 +50,8 @@ a{
 }
 .incorrect {
   color: rgb(98, 8, 21)
+}
+
+.u-none {
+  display: none;
 }

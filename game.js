@@ -1,11 +1,16 @@
 var counter = 0;
-var questions = ['First question: What is my middle name?', 'Second question: Do I prefer cats or dogs?', 'Third question: My favorite NFL team is the ...', "What's my age again?"];
+var questions = [
+  'First question: What is my middle name?',
+  'Second question: Do I prefer cats or dogs?',
+  'Third question: My favorite NFL team is the ...',
+  "What's my age again?"];
 var answers = ['elizabeth', 'dogs', 'seahawks', 25];
 var correctAns = document.getElementById('answer');
 
-function answerPic(imgId, picSource) {
-  document.getElementById(imgId).innerHTML = picSource;
-}
+
+// function answerPic(imgId, picSource) {
+//   document.getElementById(imgId).innerHTML = picSource;
+// }
 
 function updatePage(elId, text) {
   document.getElementById(elId).textContent = text;
@@ -20,14 +25,17 @@ function game(question, answer) {
 
     updatePage('question', question);
     updatePage('answer', 'You entered: ' + ques);
-
+    document.getElementById('image-right').style.display='none';
+    document.getElementById('image-wrong').style.display='none';
     if (answer === ques || answer === parseInt(ques)) {
       counter++;
-      answerPic('image', '<p><img src="images/right.png"/></p>');
+      // answerPic('image', '<img src="images/right.png"/>');
+      document.getElementById('image-right').style.display='block';
       updatePage('isCorrect', 'Yay! You guessed correctly!');
       correctAns.className= 'correct';
     } else {
-      answerPic('image', '<p><img src="images/right.png"/></p>');
+      // answerPic('image', '<p><img src="images/right.png"/></p>');
+      document.getElementById('image-wrong').style.display='block';
       updatePage('isCorrect', 'Awwww.... It\'s like you don\'t know me at all');
       correctAns.className= 'incorrect';
     }
@@ -46,24 +54,23 @@ function gameStart() {
 
   userScore();
 
-  updatePage('question', "Now let's see if you can read my mind...");
-  updatePage('answer', '');
-  updatePage('isCorrect', '');
-  updatePage('userScore', '');
 
   var guessedRight = false;
   while (!guessedRight) {
 
-    var userNum = parseInt(prompt('What number am I thinking of between 1-10?'));
+    var userNum = parseInt(prompt('Now, can you read my mind? What number am I thinking of between 1-10?'));
     updatePage('answer', 'You guessed: ' + userNum);
 
     var myNum = 5;
     if (userNum === myNum) {
+      updatePage('question', 'What number am I thinking of between 1-10?');
       updatePage('isCorrect', "You're a mind reader!");
       guessedRight = true;
     } else if (userNum > myNum) {
+      updatePage('question', 'What number am I thinking of between 1-10?');
       updatePage('isCorrect', "You're too high, guess again!");
     } else {
+      updatePage('question', 'What number am I thinking of between 1-10?');
       updatePage('isCorrect', "You're too low, guess again!");
     }
   }
