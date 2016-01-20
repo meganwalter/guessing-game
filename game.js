@@ -60,18 +60,22 @@ function gameStart() {
 
     var userNum = parseInt(prompt('Now, can you read my mind? What number am I thinking of between 1-10?'));
     updatePage('answer', 'You guessed: ' + userNum);
-
+    document.getElementById('image-right').style.display='none';
+    document.getElementById('image-wrong').style.display='none';
     var myNum = 5;
     if (userNum === myNum) {
       updatePage('question', 'What number am I thinking of between 1-10?');
       updatePage('isCorrect', "You're a mind reader!");
+      document.getElementById('image-right').style.display='block';
       guessedRight = true;
     } else if (userNum > myNum) {
       updatePage('question', 'What number am I thinking of between 1-10?');
       updatePage('isCorrect', "You're too high, guess again!");
+      document.getElementById('image-wrong').style.display='block';
     } else {
       updatePage('question', 'What number am I thinking of between 1-10?');
       updatePage('isCorrect', "You're too low, guess again!");
+      document.getElementById('image-wrong').style.display='block';
     }
   }
 
